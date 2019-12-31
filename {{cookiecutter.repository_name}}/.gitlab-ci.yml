@@ -1,0 +1,10 @@
+image: python:3.6.4
+
+before_script:
+  - make setup
+  - make install env=test
+  - make test.lint
+
+test:
+  script:
+    - make test
