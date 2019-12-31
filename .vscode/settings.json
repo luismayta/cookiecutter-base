@@ -1,0 +1,9 @@
+{
+  "workbench.colorCustomizations": {
+    "tab.unfocusedActiveBorder": "#fff0",
+    "statusBar.debuggingBackground": "#2e3440",
+    "statusBar.noFolderBackground": "#2e3440"
+  },
+  "restructuredtext.confPath": "",
+  "python.pythonPath": "/Users/elliot/.local/share/virtualenvs/cookiecutter-react-redux-saga-router-Rew2Ggq_-/Users/elliot/.pyenv/shims/python/bin/python"
+}
