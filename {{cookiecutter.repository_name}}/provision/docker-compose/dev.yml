@@ -1,0 +1,42 @@
+# Docker Compose
+# https://docs.docker.com/compose/
+
+version: '3.6'
+services:
+  # Python
+  app:
+    environment: &environment
+      - STAGE=local
+    image: {{ cookiecutter.repository_name }}-app-dev
+    build:
+      args:
+        stage: dev
+
+  nodejs:
+    ports:
+      - '3000:3000'
+    restart: always
+    image: {{ cookiecutter.repository_name }}-node-dev
+    build:
+      context: .
+      dockerfile: provision/docker/nodejs/Dockerfile
+      args:
+        stage: dev
+    volumes:
+      - .:/usr/src
+      - yarn-cache:/root/.yarn-cache
+    env_file:
+      - .env
+
+  check:
+    image: {{ cookiecutter.repository_name }}-check-dev
+    environment: *environment
+    build:
+      context: .
+      dockerfile: provision/docker/check/Dockerfile
+      args:
+        stage: dev
+    volumes:
+      - .:/usr/src
+    env_file:
+      - .env
