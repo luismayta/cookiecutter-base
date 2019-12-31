@@ -25,19 +25,41 @@ List of applications:
 - `Pyenv`_
 - `Docker`_
 
-Quick Start
-===========
+Requirements
+------------
 
-- Fork this repository
+Install `cookiecutter` command line:
 
-Usage
------
-
-- Install dependences
+Pip users
+^^^^^^^^^
 
 .. code-block:: bash
 
-   λ make setup
+    pip install cookiecutter
+
+Homebrew users
+^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+    brew install cookiecutter
+
+Windows or Pipenv users
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+    pipenv install cookiecutter
+
+
+Quickstart
+----------
+
+Generate a Cookiecutter Base project::
+
+.. code-block:: bash
+
+    cookiecutter gh:luismayta/cookiecutter-base
 
 Support
 -------
@@ -46,7 +68,7 @@ If you want to support this project, i only accept ``IOTA`` :p.
 
 .. code-block:: bash
 
-   Address: FTDCZELEMOQGL9MBWFZENJLFIZUBGMXLFVPRB9HTWYDYPTFKASJCEGJMSAXUWDQC9SJUDMZVIQKACQEEYPEUYLAMMD
+    Address: FTDCZELEMOQGL9MBWFZENJLFIZUBGMXLFVPRB9HTWYDYPTFKASJCEGJMSAXUWDQC9SJUDMZVIQKACQEEYPEUYLAMMD
 
 
 Team
