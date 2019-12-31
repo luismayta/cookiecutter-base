@@ -1,0 +1,24 @@
+{
+  "author_email": "slovacus@gmail.com",
+  "author_name": "Luis Mayta",
+  "aws_vault": "luismayta",
+  "project_description": "Description short of project",
+  "project_port": "3000",
+  "python_version": "3.8.0",
+  "release_date": "2019-12-27",
+  "repository_domain": "https://github.com",
+  "repository_name": "base",
+  "repository_owner": "luismayta",
+  "repository": ["github", "bitbucket", "gitlab"],
+  "use_docker": "true",
+  "version": "0.0.0",
+  "year": "2019",
+  "open_source_license": [
+    "MIT license",
+    "BSD license",
+    "ISC license",
+    "Apache Software License 2.0",
+    "GNU General Public License v3",
+    "Not open source"
+  ]
+}
