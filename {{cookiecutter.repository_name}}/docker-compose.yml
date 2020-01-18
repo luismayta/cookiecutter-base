@@ -15,6 +15,3 @@ services:
       - .:/usr/src
     env_file:
       - .env
-
-volumes:
-  yarn-cache:
