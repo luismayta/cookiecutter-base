@@ -1,5 +1,5 @@
 # ~/.tmuxinator/{{cookiecutter.repository_name}}.yml
-name: { { cookiecutter.repository_name } }
+name: {{ cookiecutter.repository_name }}
 root: ./
 # Optional tmux socket
 # socket_name: foo
