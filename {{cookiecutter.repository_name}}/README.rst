@@ -12,9 +12,10 @@
 .. contents:: Table of Contents:
     :local:
 
+Features
+--------
 
-License
--------
+* Task
 
 The code in this repository is licensed under the GPL unless
 otherwise noted.
@@ -58,14 +59,7 @@ Project Start
 
     $ make environment
     $ make setup
-    $ make yarn.install
 
-Start Application
-^^^^^^^^^^^^^^^^^
-
-.. code:: bash
-
-    $ make yarn.start
 
 Troubleshooting
 ---------------
@@ -79,9 +73,17 @@ Execute the next:
 
     pyenv shell {{ cookiecutter.python_version }}
 
+Team
+----
+
++---------------+
+| |{{cookiecutter.author_name}}|  |
++---------------+
+| `{{cookiecutter.author_name}}`_ |
++---------------+
 
 License
-=======
+-------
 
 MIT
 
@@ -92,10 +94,14 @@ Please see `CHANGELOG`_ for more information what
 has changed recently.
 
 Contributing
-============
+------------
 
-Please see `CONTRIBUTING`_ for details.
+Contributions are welcome!
 
+Review the `CONTRIBUTING`_ for details on how to:
+
+* Submit issues
+* Submit pull requests
 
 Versioning
 ----------
@@ -110,11 +116,9 @@ Credits
 
 -  `CONTRIBUTORS`_
 
-Made with :heart: :coffee: and :pizza: by `luismayta`_.
+|linkedin| |beacon| |made|
 
-.. |license| image:: https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square
-    :target: LICENSE
-    :alt: License
+Made with :coffee: and :pizza: by `{{cookiecutter.author_name}}`_ and `{{cookiecutter.company_name}}`_.
 
 .. Links
 .. _`CHANGELOG`: CHANGELOG.rst
@@ -122,8 +126,27 @@ Made with :heart: :coffee: and :pizza: by `luismayta`_.
 .. _`CONTRIBUTING`: docs/source/CONTRIBUTING.rst
 .. _`LICENSE`: LICENSE
 
+.. _`{{cookiecutter.company_name}}`: {{cookiecutter.repository_domain}}/{{cookiecutter.company_repository_username}}
+.. _`{{cookiecutter.author_name}}`: {{cookiecutter.repository_domain}}/{{cookiecutter.author_repository_username}}
 
-.. _`luismayta`: https://github.com/luismayta
+.. |Build Status| image:: https://travis-ci.org/{{cookiecutter.repository_owner}}/{{cookiecutter.repository_name}}.svg
+    :target: https://travis-ci.org/{{cookiecutter.repository_owner}}/{{cookiecutter.repository_name}}
+.. |GitHub issues| image:: https://img.shields.io/github/issues/{{cookiecutter.repository_owner}}/{{cookiecutter.repository_name}}.svg
+    :target: {{cookiecutter.repository_domain}}/{{cookiecutter.repository_owner}}/{{cookiecutter.repository_name}}/issues
+.. |GitHub license| image:: https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square
+    :target: LICENSE
+
+.. Team:
+.. |{{cookiecutter.author_name}}| image:: {{cookiecutter.repository_domain}}/{{cookiecutter.author_repository_username}}.png?size=100
+    :target: {{cookiecutter.repository_domain}}/{{cookiecutter.author_repository_username}}
+
+.. Footer:
+.. |linkedin| image:: http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.png
+    :target: {{cookiecutter.author_linkedin}}
+.. |beacon| image:: https://ga-beacon.appspot.com/UA-65019326-1/github.com/{{cookiecutter.repository_owner}}/{{cookiecutter.repository_name}}/readme
+    :target: {{cookiecutter.repository_domain}}/{{cookiecutter.repository_owner}}/{{cookiecutter.repository_name}}
+.. |made| image:: https://img.shields.io/badge/Made%20with-Zsh-1f425f.svg
+    :target: http://www.zsh.org
 
 .. dependences
 .. _`Pyenv`: https://github.com/pyenv/pyenv
