@@ -1,6 +1,11 @@
 {
   "author_email": "slovacus@gmail.com",
   "author_name": "Luis Mayta",
+  "author_linkedin": "https://www.linkedin.com/in/luismayta",
+  "author_pgp": "https://keybase.io/luismayta/pgp_keys.asc",
+  "author_repository_username": "luismayta",
+  "author_twitter": "https://twitter.com/slovacus",
+  "author_website": "https://luismayta.github.io",
   "aws_vault": "luismayta",
   "project_description": "Description short of project",
   "project_port": "3000",
