@@ -34,7 +34,7 @@ pytest-runner = "*"
 pyhamcrest = "*"
 factory-boy = ">=2.10.0"
 flake8 = "*"
-dev8 = "*"
+doc8 = "*"
 
 [packages]
 aws = "*"
