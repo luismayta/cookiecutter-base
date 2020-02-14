@@ -23,6 +23,7 @@ PROJECT := {{ cookiecutter.repository_name }}
 PROJECT_PORT := {{ cookiecutter.project_port }}
 
 PYTHON_VERSION={{ cookiecutter.python_version }}
+NODE_VERSION=v12.14.1
 PYENV_NAME="${PROJECT}"
 
 # Configuration.
@@ -74,6 +75,8 @@ help:
 
 setup:
 	@echo "=====> install packages..."
+	pyenv local ${PYTHON_VERSION}
+	yarn
 	$(PIPENV_INSTALL) --dev --skip-lock
 	$(PIPENV_RUN) pre-commit install
 	$(PIPENV_RUN) pre-commit install -t pre-push
@@ -83,5 +86,6 @@ setup:
 
 environment:
 	@echo "=====> loading virtualenv ${PYENV_NAME}..."
+	pyenv local ${PYTHON_VERSION}
 	@pipenv --venv || $(PIPENV_INSTALL) --python=${PYTHON_VERSION} --skip-lock
 	@echo ${MESSAGE_HAPPY}
