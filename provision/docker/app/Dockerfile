@@ -7,7 +7,6 @@ ARG stage
 LABEL NAME cookiecutter-base-app-$stage
 
 ENV USERNAME developer
-
 ENV PACKAGES bash \
   openssl
 
