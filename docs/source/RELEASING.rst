@@ -16,7 +16,7 @@ Run tests using `pytest`_.
 
 .. code-block:: sh
 
-    $ make test
+   $ make test
 
 Check sintax code:
 
@@ -34,7 +34,7 @@ Make a new version of cookiecutter-base in the following steps:
 
 .. code-block:: sh
 
-    $ bumplus -v $VERSION
+    bumplus -v $VERSION
 
 * Dry Run: ``bumpversion --dry-run --verbose --new-version 0.8.1 patch``
 * Do it: ``bumpversion --new-version 0.8.1 patch``
