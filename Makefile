@@ -18,6 +18,7 @@ else
 endif
 
 TEAM := private
+AWS_VAULT ?= luismayta
 PROJECT := cookiecutter-base
 PROJECT_PORT := 8000
 
@@ -70,6 +71,7 @@ help:
 	@make docs.help
 	@make test.help
 
+
 setup:
 	@echo "=====> install packages..."
 	pyenv local ${PYTHON_VERSION}
@@ -84,5 +86,5 @@ setup:
 environment:
 	@echo "=====> loading virtualenv ${PYENV_NAME}..."
 	pyenv local ${PYTHON_VERSION}
-	@pipenv --venv || $(PIPENV_INSTALL) --skip-lock --python=${PYTHON_VERSION}
+	@pipenv --venv || $(PIPENV_INSTALL) --python=${PYTHON_VERSION} --skip-lock
 	@echo ${MESSAGE_HAPPY}
