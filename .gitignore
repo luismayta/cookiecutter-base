@@ -1,6 +1,18 @@
 
-# Created by https://www.gitignore.io/api/python,node
-# Edit at https://www.gitignore.io/?templates=python,node
+# Created by https://www.gitignore.io/api/terraform,python,node,ansible,bash,code
+# Edit at https://www.gitignore.io/?templates=terraform,python,node,ansible,bash,code
+
+### Ansible ###
+*.retry
+
+#!! ERROR: bash is undefined. Use list command to see defined gitignore types !!#
+
+### Code ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
 ### Node ###
 # Logs
@@ -80,6 +92,18 @@ typings/
 # nuxt.js build output
 .nuxt
 
+# rollup.js default build output
+dist/
+
+# Uncomment the public line if your project uses Gatsby
+# https://nextjs.org/blog/next-9-1#public-directory-support
+# https://create-react-app.dev/docs/using-the-public-folder/#docsNav
+# public
+
+# Storybook build outputs
+.out
+.storybook-out
+
 # vuepress build output
 .vuepress/dist
 
@@ -91,6 +115,10 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+# Temporary folders
+tmp/
+temp/
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
@@ -105,10 +133,10 @@ __pycache__/
 .Python
 build/
 develop-eggs/
-dist/
 downloads/
 eggs/
 .eggs/
+lib/
 lib64/
 parts/
 sdist/
@@ -195,28 +223,34 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# End of https://www.gitignore.io/api/python,node
+### Terraform ###
+# Local .terraform directories
+**/.terraform/*
 
-# Created by https://www.gitignore.io/api/code
-# Edit at https://www.gitignore.io/?templates=code
+# .tfstate files
+*.tfstate
+*.tfstate.*
 
-### Code ###
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+# Crash log files
+crash.log
 
-# End of https://www.gitignore.io/api/code
+# Ignore any .tfvars files that are generated automatically for each Terraform run. Most
+# .tfvars files are managed as part of configuration and so should be included in
+# version control.
+#
+# example.tfvars
 
-# Created by https://www.gitignore.io/api/code
-# Edit at https://www.gitignore.io/?templates=code
+# Ignore override files as they are usually used to override resources locally and so
+# are not checked in
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
 
-### Code ###
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+# Include override files you do wish to add to version control using negated pattern
+# !example_override.tf
 
-# End of https://www.gitignore.io/api/code
+# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
+# example: *tfplan*
+
+# End of https://www.gitignore.io/api/terraform,python,node,ansible,bash,code
