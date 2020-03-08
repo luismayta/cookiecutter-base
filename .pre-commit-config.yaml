@@ -6,7 +6,7 @@ exclude: ^(\.|\{\{cookiecutter\.repository_name\}\}/\.|\{\{cookiecutter\.reposit
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit
-    rev: v2.0.1
+    rev: v2.1.1
     hooks:
       - id: validate_manifest
   - repo: https://github.com/detailyang/pre-commit-shell
@@ -27,7 +27,7 @@ repos:
         args: []
         files: .py$
   - repo: https://github.com/Lucas-C/pre-commit-hooks-nodejs
-    rev: v1.1.0
+    rev: v1.1.1
     hooks:
       - id: markdown-toc
   - repo: https://github.com/Lucas-C/pre-commit-hooks-markup
@@ -72,6 +72,7 @@ repos:
       - id: check-added-large-files
         files: ^tf|-|\.(py|env|yml|yaml)$
       - id: check-case-conflict
+      - id: check-json
       - id: check-xml
       - id: check-yaml
       - id: check-byte-order-marker
@@ -91,13 +92,13 @@ repos:
         fix: lr
       - id: check-executables-have-shebangs
   - repo: https://github.com/asottile/blacken-docs
-    rev: v1.5.0-1
+    rev: v1.6.0
     hooks:
       - id: blacken-docs
         additional_dependencies:
           - black
   - repo: https://github.com/antonbabenko/pre-commit-terraform
-    rev: v1.25.0
+    rev: v1.27.0
     hooks:
       - id: terraform_fmt
       - id: terraform_docs
@@ -105,4 +106,4 @@ repos:
     rev: 1.19.1 # Use the sha or tag you want to point at
     hooks:
       - id: prettier
-        exclude: node_modules
+        exclude: lib|node_modules
