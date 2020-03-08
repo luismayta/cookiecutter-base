@@ -1,6 +1,8 @@
 {{ cookiecutter.repository_name }}
 ==================================
 
+|Build Status| |GitHub issues| |GitHub license|
+
 {{ cookiecutter.project_description }}
 
 :Version: {{cookiecutter.version}}
@@ -141,7 +143,6 @@ Made with :coffee: and :pizza: by `{{cookiecutter.author_name}}`_ and `{{cookiec
     :target: {{cookiecutter.repository_domain}}/{{cookiecutter.author_repository_username}}
 
 .. Footer:
-
 .. |linkedin| image:: http://www.linkedin.com/img/webpromo/btn_liprofile_blue_80x15.png
     :target: {{cookiecutter.author_linkedin}}
 .. |beacon| image:: https://ga-beacon.appspot.com/UA-65019326-1/github.com/{{cookiecutter.repository_owner}}/{{cookiecutter.repository_name}}/readme

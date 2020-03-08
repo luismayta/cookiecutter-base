@@ -1,6 +1,6 @@
 FROM python:{{ cookiecutter.python_version }}-slim
 
-MAINTAINER Luis Mayta <@slovacus>
+MAINTAINER {{cookiecutter.author_name}} {{cookiecutter.author_email}}
 
 ARG stage
 LABEL NAME {{ cookiecutter.repository_name }}-check-$stage
