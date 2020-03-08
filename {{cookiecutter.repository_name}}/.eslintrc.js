@@ -5,7 +5,6 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
-    project: './tsconfig.json',
     ecmaVersion: 2018,
     sourceType: 'module',
   },
@@ -28,7 +27,6 @@ module.exports = {
         ecmaFeatures: { jsx: true },
         ecmaVersion: 2018,
         sourceType: 'module',
-        project: './tsconfig.json',
       },
       plugins: ['prettier', '@typescript-eslint'],
       rules: {
