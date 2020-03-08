@@ -1,7 +1,3 @@
-#
-# See ./CONTRIBUTING.rst
-#
-
 test.help:
 	@echo '    Test:'
 	@echo ''
