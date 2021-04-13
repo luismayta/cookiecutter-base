@@ -189,10 +189,13 @@
     prettier "^2.0.5"
     pretty-quick "^2.0.1"
 
-"@equipindustry/prettierrc@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@equipindustry/prettierrc/-/prettierrc-0.1.1.tgz#ed4d5ba00ea765d8d008a2917f25baf8f7b0e0e6"
-  integrity sha512-Jov3dlvmOFOngluaDXSL8lQZTZyHTQJX0+kgDolkmGxEqmieHvyoWac0w0fNcjVQb/3vJ25KHvWGOBldjPU/Fg==
+"@equipindustry/prettierrc@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@equipindustry/prettierrc/-/prettierrc-0.2.0.tgz#75c642eb2237f2f50dfe22500b58a94d465d7e61"
+  integrity sha512-4k99NQpQ5efQBlWyOWSOi4Tfr25XzcZABI1Pdli3etSx0AN3Dh4mejLwPZXTLu2v0y3YwzQvSjYCaWgkPVHO6w==
+  dependencies:
+    prettier "^2.0.4"
+    pretty-quick "^2.0.1"
 
 "@marionebl/sander@^0.6.0":
   version "0.6.1"
@@ -4969,7 +4972,7 @@ prettier@^1.19.1:
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.19.1.tgz#f7d7f5ff8a9cd872a7be4ca142095956a60797cb"
   integrity sha512-s7PoyDv/II1ObgQunCbB9PdLmUcBZcnWOcxDh7O0N/UwDEsHyqkW+Qh28jW+mVuCdx7gLB0BotYI1Y6uI9iyew==
 
-prettier@^2.0.5:
+prettier@^2.0.4, prettier@^2.0.5:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.2.1.tgz#795a1a78dd52f073da0cd42b21f9c91381923ff5"
   integrity sha512-PqyhM2yCjg/oKkFPtTGUojv7gnZAoG80ttl45O6x2Ug/rMJw4wcc9k6aaf2hibP7BGVCCM33gZoGjyvt9mm16Q==
