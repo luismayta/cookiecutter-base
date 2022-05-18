@@ -10,6 +10,4 @@ Briefly describe the issue you are experiencing (or the feature you want to see 
 
 - [ ] Task number 1
 
-/label ~Backlog ~Backend
-/cc @luismayta
-/assign @luismayta
+/label ~Backlog ~Backend /cc @luismayta /assign @luismayta

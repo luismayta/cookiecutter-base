@@ -74,7 +74,7 @@ help:
 	@make utils.help
 
 setup:
-	@echo "=====> install packages..."
+	@echo "==> install packages..."
 	pyenv local ${PYTHON_VERSION}
 	yarn
 	$(PIPENV_INSTALL) --dev --skip-lock
@@ -85,7 +85,7 @@ setup:
 	@echo ${MESSAGE_HAPPY}
 
 environment:
-	@echo "=====> loading virtualenv ${PYENV_NAME}..."
+	@echo "==> loading virtualenv ${PYENV_NAME}..."
 	pyenv local ${PYTHON_VERSION}
 	@pipenv --venv || $(PIPENV_INSTALL) --python=${PYTHON_VERSION} --skip-lock
 	@echo ${MESSAGE_HAPPY}

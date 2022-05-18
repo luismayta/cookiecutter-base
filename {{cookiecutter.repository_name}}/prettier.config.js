@@ -1,1 +1,1 @@
-module.exports = require('@equipindustry/prettierrc');
+module.exports = require('@equipindustry/prettierrc')
