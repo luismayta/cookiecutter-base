@@ -17,9 +17,7 @@ If necessary, describe the problem you have been experiencing in more detail.
 
 ### Link to Project logs
 
-Create a [snippets](https://gitlab.com/dashboard/snippets) which is a paste of your _full_ Project logs, and link them here.
-Do _NOT_ paste your full Project logs here, as it will make this issue very long and hard to read!
-If you are reporting a bug, _always_ include Project logs!
+Create a [snippets](https://gitlab.com/dashboard/snippets) which is a paste of your _full_ Project logs, and link them here. Do _NOT_ paste your full Project logs here, as it will make this issue very long and hard to read! If you are reporting a bug, _always_ include Project logs!
 
 ### What is the current bug behavior?
 
@@ -29,6 +27,4 @@ If you are reporting a bug, _always_ include Project logs!
 
 (What you should see instead)
 
-/label ~bug ~reproduced ~needs-investigation ~backlog
-/cc @luismayta
-/assign @luismayta
+/label ~bug ~reproduced ~needs-investigation ~backlog /cc @luismayta /assign @luismayta

@@ -14,12 +14,6 @@ keybase:
 	make keybase.help
 
 keybase.setup:
-	@echo "=====> make dependences for ${TEAM}..."
-	mkdir -p ${KEYS_PEM_DIR}
-	mkdir -p ${KEYS_PUB_DIR}
-	mkdir -p ${KEYS_KEY_DIR}
-	mkdir -p ${KEYS_PRIVATE_DIR}
-	mkdir -p ${PASSWORD_DIR}
-	touch ${PASSWORD_DIR}/${PROJECT}-staging.txt
-	touch ${PASSWORD_DIR}/${PROJECT}-prod.txt
+	@echo "==> make dependences for ${TEAM}..."
+	mkdir -p ${KEYBASE_PROJECT_PATH}/{staging,prod,dev}/{pem,private,password,pub,openssl}
 	@echo ${MESSAGE_HAPPY}

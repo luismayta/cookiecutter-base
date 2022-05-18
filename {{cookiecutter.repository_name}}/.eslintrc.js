@@ -1,21 +1,21 @@
-const prettierrc = require('@equipindustry/prettierrc');
+const prettierrc = require('@equipindustry/prettierrc')
 module.exports = {
   parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     },
     ecmaVersion: 2018,
-    sourceType: 'module',
+    sourceType: 'module'
   },
   rules: {
     'prettier/prettier': [
       'error',
       prettierrc,
       {
-        usePrettierrc: true,
-      },
-    ],
+        usePrettierrc: true
+      }
+    ]
   },
   overrides: [
     {
@@ -26,7 +26,7 @@ module.exports = {
       parserOptions: {
         ecmaFeatures: { jsx: true },
         ecmaVersion: 2018,
-        sourceType: 'module',
+        sourceType: 'module'
       },
       plugins: ['prettier', '@typescript-eslint'],
       rules: {
@@ -34,10 +34,10 @@ module.exports = {
           'error',
           prettierrc,
           {
-            usePrettierrc: true,
-          },
-        ],
-      },
-    },
-  ],
-};
+            usePrettierrc: true
+          }
+        ]
+      }
+    }
+  ]
+}
