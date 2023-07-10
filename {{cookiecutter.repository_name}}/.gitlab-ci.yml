@@ -1,4 +1,4 @@
-image: python:3.8.0
+image: python:3.11.4
 
 before_script:
   - make setup
