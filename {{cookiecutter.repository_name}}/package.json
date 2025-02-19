@@ -46,7 +46,7 @@
     "lint-staged": "^13.2.3",
     "prettier": "^3.0.0",
     "prettier-tslint": "^0.4.2",
-    "rimraf": "^5.0.1",
+    "rimraf": "^5.0.10",
     "semantic-release": "^21.0.7"
   },
   "dependencies": {}
