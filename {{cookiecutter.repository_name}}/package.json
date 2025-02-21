@@ -47,7 +47,7 @@
     "prettier": "^3.5.1",
     "prettier-tslint": "^0.4.2",
     "rimraf": "^5.0.10",
-    "semantic-release": "^21.0.7"
+    "semantic-release": "^21.1.2"
   },
   "dependencies": {}
 }
