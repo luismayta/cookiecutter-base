@@ -20,7 +20,7 @@
     "access": "private"
   },
   "engines": {
-    "node": ">=v12.22.12"
+    "node": ">=22.23.2"
   },
   "commitlint": {
     "extends": [
